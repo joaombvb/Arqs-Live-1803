@@ -1,0 +1,169 @@
+/* Variaveis CSS */
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-gray: #666666;
+    --color-default: #ff385c;
+    --font-body: 'Quicksand', sans-serif;
+
+}
+
+/* Reset CSS */
+
+* {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: var(--color-dark);
+
+}
+
+ul, ol {
+    list-style: none;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+
+}
+
+/* header da pagina */
+
+.header-page {
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo h1 {
+    color: var(--color-default);
+    font-weight: 900;
+
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    color: var(--color-default);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-menu a:hover {
+    color: var(--color-gray)
+}
+
+
+/* fim do header da pagina */
+
+/* main */
+main {
+    margin: 20px 0;
+
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    flex-wrap: wrap;
+
+}
+
+.icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    flex: 1;
+}
+
+.icons i {
+    font-size: 20px;
+    color: var(--color-gray);
+
+}
+
+.icons p {
+    font-size: 12px;
+
+}
+
+.icon-item:hover i,
+.icon-item:hover p {
+    color: var(--color-default);
+}
+
+
+/* houses */
+.house {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.house-item {
+    width: 30%;
+    transition:0.5s;
+}
+
+.house-item:hover{
+    transform: scale(1.1);
+
+}
+.house-item a {
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #cccccc;
+    border-radius: 6px;
+
+}
+
+.house-item span {
+    font-weight:900;
+}
+
+.house-item img{
+    border-radius: 6px;
+    
+}
+
+@media(max-width:1024px) {
+    .icons a {
+        width: 240px;
+
+    }
+
+    .house-item {
+        width: 46%;
+    }
+}
